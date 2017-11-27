@@ -1,7 +1,8 @@
 .button {
   position: fixed;
   background: #0198df;
-  color: white;
+  color: magenta;
   padding: 10px;
   z-index: 11000;
+  transition: linear 0.25s;
 }
