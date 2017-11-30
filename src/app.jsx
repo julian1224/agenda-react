@@ -1,5 +1,7 @@
 import React from 'react';
-import Student from './components/student';
+import Day from './components/day';
+import Button from './components/button';
+import Dropdown from './components/dropdown';
 
 /**
  * App component
@@ -10,34 +12,42 @@ class App extends React.Component {
 
     constructor(props) {
         super(props);
+
+        // this.
     }
 
     render() {
         return (
             <div className="app">
                 MD2 React app om te oefenen
-                <Student
-                    name="Berend"
-                    age="34"
+                <Dropdown 
+                    label="element 6"
                 />
-                <Student 
-                    name="Joshua"
-                    age="17"
-                    adress="Nieuwveen"
+                <Day
+                    name="Monday"
                 />
-                <Student 
-                    name="Link"
-                    age="18"
-                    adress="Amsterdam"
+                <Day
+                    name="Tuesday"
                 />
-                <Student 
-                    name="Soufiane"
-                    age="19"
+                <Day
+                    name="Wednesday"
                 />
-                <Student 
-                    name="Jordi"
-                    age="17?"
+                <Day
+                    name="Thursday"
                 />
+                <Day
+                    name="Friday"
+                />
+                <Day
+                    name="Saturday"
+                    weekend="true"
+                />
+                <Day
+                    name="Sunday"
+                />
+                <Button
+                    
+                    />
             </div>
         );
     }
