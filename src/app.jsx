@@ -1,5 +1,7 @@
 import React from 'react';
 import Student from './components/student';
+import Button from './components/button';
+import Dropdown from './components/dropdown';
 
 /**
  * App component
@@ -16,28 +18,34 @@ class App extends React.Component {
         return (
             <div className="app">
                 MD2 React app om te oefenen
+                <Dropdown
+                label="NIBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB"
+                value="3"
+                 />
                 <Student
                     name="Berend"
                     age="34"
                 />
-                <Student 
+                <Student
                     name="Joshua"
                     age="17"
                     adress="Nieuwveen"
                 />
-                <Student 
+                <Student
                     name="Link"
                     age="18"
                     adress="Amsterdam"
                 />
-                <Student 
+                <Student
                     name="Soufiane"
                     age="19"
                 />
-                <Student 
+                <Student
                     name="Jordi"
                     age="17?"
                 />
+
+                <Button /> <Button /> <Button /> <Button /> <Button /> <Button /> <Button /> <Button /> <Button /> <Button />
             </div>
         );
     }

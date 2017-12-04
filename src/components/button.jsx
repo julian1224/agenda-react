@@ -20,8 +20,8 @@ class Button extends React.Component {
 
     render() {
         const styles = {
-            top : Math.random() * 500,
-            left : Math.random() * 500
+            top : Math.random() * 600,
+            left : Math.random() * 600
         };
 
         return (
@@ -30,7 +30,7 @@ class Button extends React.Component {
                 style={styles}
                 onClick={e => this.youClickedMe()}
             >
-                klik mij
+                suicidal thoughts
             </div>
         );
     }
