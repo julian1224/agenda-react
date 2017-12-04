@@ -6,7 +6,7 @@ class Dropdown extends React.Component {
         super(props);
 
         this.state = {
-<<<<<<< HEAD
+
             isOpen : false,
             selectedItem : { label : "--" },
             items : [
@@ -16,17 +16,6 @@ class Dropdown extends React.Component {
                 { label : 'GO', value : 3 },
                 { label : 'AND', value : 4 },
                 { label : 'dye', value : 5 }
-=======
-            isOpen: false,
-            selectedItem: { label: "--" },
-            items: [
-                { label: 'react', value: 0 },
-                { label: 'angular', value: 1 },
-                { label: 'ember', value: 2 },
-                { label: 'element4', value: 3 },
-                { label: 'element5', value: 4 },
-                { label: this.props.label, value: this.props.value }
->>>>>>> refs/remotes/Joshuavtk/master
             ]
         };
     }
@@ -34,34 +23,20 @@ class Dropdown extends React.Component {
     selectItem(item) {
         console.log('We switchen naar:', item.label);
         this.setState({
-<<<<<<< HEAD
                           selectedItem : item,
                           isOpen : false
                       });
-=======
-            selectedItem: item,
-            isOpen: false
-        });
->>>>>>> refs/remotes/Joshuavtk/master
     }
 
     toggleOpen() {
         this.setState({
-<<<<<<< HEAD
+
                           isOpen : !this.state.isOpen
                       });
     }
 
     renderOptionsWhenOpen() {
         if ( !this.state.isOpen ){
-=======
-            isOpen: !this.state.isOpen
-        });
-    }
-
-    renderOptionsWhenOpen() {
-        if (!this.state.isOpen) {
->>>>>>> refs/remotes/Joshuavtk/master
             return;
         }
 
@@ -95,8 +70,4 @@ class Dropdown extends React.Component {
     }
 
 }
-<<<<<<< HEAD
 export default Dropdown;
-=======
-export default Dropdown;
->>>>>>> refs/remotes/Joshuavtk/master

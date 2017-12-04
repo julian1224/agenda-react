@@ -1,5 +1,5 @@
 import React from 'react';
-import Student from './components/student';
+import Day from './components/day';
 import Button from './components/button';
 import Dropdown from './components/dropdown';
 
@@ -22,27 +22,36 @@ class App extends React.Component {
                 label="NIBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB"
                 value="3"
                  />
-                <Student
-                    name="Berend"
-                    age="34"
+                <Day
+                    name="Monday"
+                    id="0"
                 />
-                <Student
-                    name="Joshua"
-                    age="17"
+                <Day
+                    name="Tuesday"
+                    id="1"
                     adress="Nieuwveen"
                 />
-                <Student
-                    name="Link"
-                    age="18"
-                    adress="Amsterdam"
+                <Day
+                    name="Wednesday"
+                    id="2"
                 />
-                <Student
-                    name="Soufiane"
-                    age="19"
+                <Day
+                    name="Thursday"
+                    id="3"
                 />
-                <Student
-                    name="Jordi"
-                    age="17?"
+                <Day
+                    name="Friday"
+                    id="4"
+                />
+                <Day
+                    name="Saturday"
+                    weekend="true"
+                    id="5"
+                />
+                <Day
+                    name="Sunday"
+                    weekend="true"
+                    id="6"
                 />
 
                 <Button /> <Button /> <Button /> <Button /> <Button /> <Button /> <Button /> <Button /> <Button /> <Button />
